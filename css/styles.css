@@ -5,7 +5,35 @@
 /* цвет 4 color: #212121 черный  */
 /* цвет 5 color: rgba(255, 255, 255, 0.6) белый с прозрачностью */
 
+/* основной цвет и текст */
 body {
-background-color: #ffff;
+    background-color: #FFFFFF;
+    color: rgba(117, 117, 117, 1);
+}
+ul {list-style: none;
+}
 
+/* логотип */
+.logo {
+    color: #2196F3;
+}
+.span-logo {
+    color: #212121;
+}
+/* ссылки навигации */
+.menu :hover,
+      :focus,
+      :active {
+    color: #2196F3;
+}
+.menu-link {
+    color: #212121;
+}
+/* контакты навигации */
+.contact-list :hover,
+              :focus,
+              :active {
+    color: #2196F3;
+}.contact-link {
+    color: #757575;
 }
