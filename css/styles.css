@@ -4,36 +4,129 @@
 /* цвет 3 color: #2196F3 синий*/
 /* цвет 4 color: #212121 черный  */
 /* цвет 5 color: rgba(255, 255, 255, 0.6) белый с прозрачностью */
+:root {
+    --primary-text-color: rgba(117, 117, 117, 1);
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --contact-color:rgba(255, 255, 255, 0.6);
+    --background-color:rgba(255, 255, 255, 1);
+    --second-background-color: #2F303A;
+    --background-team-section: #F5F4FA;
+}
 
 /* основной цвет и текст */
 body {
-    background-color: #FFFFFF;
-    color: rgba(117, 117, 117, 1);
+    background-color: var(--background-color)
+    color: var(--primary-text-color)
 }
 ul {list-style: none;
+}
+body { font-family: roboto;
 }
 
 /* логотип */
 .logo {
-    color: #2196F3;
+    color: var(--accent-color)
 }
-.span-logo {
-    color: #212121;
+.head-logo {
+    color: var(--title-text-color)
+}
+.footer-logo{
+    color: var(--background-color);
 }
 /* ссылки навигации */
-.menu :hover,
-      :focus,
-      :active {
-    color: #2196F3;
+.menu :hover { 
+    color: var(--accent-color)
+}
+.menu :focus { 
+    color: var(--accent-color)
 }
 .menu-link {
-    color: #212121;
+    color: var(--title-text-color)
 }
 /* контакты навигации */
-.contact-list :hover,
-              :focus,
-              :active {
-    color: #2196F3;
+.contact-list :hover {
+    color: var(--accent-color)
+}
+.contact-list :focus
+               {
+    color: var(--accent-color)
 }.contact-link {
-    color: #757575;
+    color: var(--primary-text-color)
+}
+/* Герой */
+.hero {
+    background-color: var(--second-background-color);
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+}
+.hero-title {
+    color: var(--background-color);
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+   
+}
+/* секции */
+.section-title {
+    color: var(--title-text-color)
+}
+/* внимание к деталям */
+.details {
+    background-color: var(--background-color);
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+}
+.details > .title {
+
+}
+.detail-list .title {
+    color: var(--title-text-color)
+}
+/* Чем мы занимаемся */
+.todo {
+    background-color: var(--background-color)
+}
+/* наша команда  */
+.team {
+    background-color: var(--background-team-section);
+}
+.team-list .title {
+    color: var(--title-text-color)
+}
+/* Футер */
+.footer{
+    background-color: var(--second-background-color);
+}
+.link-adress{
+    color: var(--background-color);
+}
+.list-item .link {
+    color: var(--contact-color);
+}
+/* button */
+.hero .button {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 700px;
+    top: 430px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 30px;
 }
