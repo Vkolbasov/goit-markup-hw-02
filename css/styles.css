@@ -3,7 +3,22 @@
 /* цвет 2 color: #FFFFFF белый */
 /* цвет 3 color: #2196F3 синий*/
 /* цвет 4 color: #212121 черный  */
-/* цвет 5 color: rgba(255, 255, 255, 0.6) белый с прозрачностью */
+/* цвет 5 color: rgba(255, 255, 255, 0.6) белый спрозрачностью */
+
+/* шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto',
+    sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+    
 :root {
     --primary-text-color: rgba(117, 117, 117, 1);
     --title-text-color: #212121;
@@ -24,17 +39,28 @@ ul {list-style: none;
 body { font-family: roboto;
 }
 
+/* шапка  */
+.page-header {
+    font-weight: 500;
+    font-size: 14px;
+}
 /* логотип */
 .logo {
-    color: var(--accent-color)
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
 }
 .head-logo {
     color: var(--title-text-color)
 }
 .footer-logo{
-    color: var(--background-color);
+    color: var(--background-color)
 }
 /* ссылки навигации */
+
 .menu :hover { 
     color: var(--accent-color)
 }
@@ -42,9 +68,10 @@ body { font-family: roboto;
     color: var(--accent-color)
 }
 .menu-link {
-    color: var(--title-text-color)
+    color: var(--title-text-color)    
 }
 /* контакты навигации */
+
 .contact-list :hover {
     color: var(--accent-color)
 }
@@ -57,26 +84,13 @@ body { font-family: roboto;
 /* Герой */
 .hero {
     background-color: var(--second-background-color);
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-}
-.hero-title {
-    color: var(--background-color);
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-   
+}
+.hero-title {
+    color: var(--background-color)
 }
 /* секции */
 .section-title {
@@ -84,27 +98,33 @@ body { font-family: roboto;
 }
 /* внимание к деталям */
 .details {
-    background-color: var(--background-color);
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
+    background-color: var(--background-color)
 }
-.details > .title {
 
-}
-.detail-list .title {
-    color: var(--title-text-color)
+.detail-list > .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 /* Чем мы занимаемся */
 .todo {
     background-color: var(--background-color)
 }
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
 /* наша команда  */
 .team {
     background-color: var(--background-team-section);
 }
+.team-list {
+    font-size: 16px;
+}
+
 .team-list .title {
     color: var(--title-text-color)
 }
@@ -122,11 +142,38 @@ body { font-family: roboto;
 .hero .button {
     color: var(--background-color);
     background-color: var(--accent-color);
-    position: absolute;
+
     left: 700px;
     top: 430px;
     width: 200px;
     height: 50px;
     font-size: 16px;
     font-weight: 30px;
+    line-height: 30px;
+}
+/* резюме */
+.page-content {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+.text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.buttons {
+    background-color: var(--contact-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.buttons:hover {
+    background-color: var(--accent-color);
+    color: var(--background-team-section);
+
 }
