@@ -14,7 +14,7 @@
     --contact-color: rgba(255, 255, 255, 0.6);
     --background-color: rgba(255, 255, 255, 1);
     --second-background-color: #2F303A;
-    
+    --team-section-color: rgba(245, 244, 250, 1);
 }
 
 /* основной цвет и текст */
@@ -76,90 +76,128 @@ line-height: 1.14;
 
     
 /* контакты навигации */
-.list .contacts {
-letter-spacing: 0.02em;
-list-style: none;
+.contacts .item  {
+    letter-spacing: 0.02em;
+    list-style: none;
 }
 
 .contacts .link {
     color: var(--primary-text-color);
-    
+
 }
 
 
 /* Герой */
 .hero {
     background-color: var(--second-background-color);
+    color: var(--background-color);
     letter-spacing: 0.06em;
 }
 .hero-title {
-    color: var(--background-color); 
-
+    width: 696px;
+    height: 120px;
+    left: 481px;
+    top: 299px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
 
 }
-/* секции */
-.section-title {
-    color: var(--title-text-color)
-}
-/* внимание к деталям */
-.details {
-    background-color: var(--background-color)
-}
-
-.detail-list .title {
-    color: var(--title-text-color);
-
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-}
-/* Чем мы занимаемся */
-.todo {
-    background-color: var(--background-color)
-}
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-}
-/* наша команда  */
-.team {
-    background-color: var(--background-team-section);
-}
-.team-list {
-    font-size: 16px;
-}
-
-.team-list .title {
-    color: var(--title-text-color)
-}
-/* Футер */
-.footer{
-    background-color: var(--second-background-color);
-}
-.link-adress{
-    color: var(--background-color);
-}
-.list-item .link {
-    color: var(--contact-color);
-}
-/* button */
+/* button для Героя */
 .hero .button {
     color: var(--background-color);
     background-color: var(--accent-color);
 
-    left: 700px;
-    top: 430px;
+}
+
+.button {
     width: 200px;
     height: 50px;
+    left: 729px;
+    top: 449px;
+    font-weight: 700;
     font-size: 16px;
-    font-weight: 30px;
-    line-height: 30px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
-/* резюме */
+
+
+/* секции */
+
+
+/* внимание к деталям */
+.details .section-title {
+    /* нужен сброс */
+    color: var(--background-color);
+
+    font-size: 1px;
+}
+
+.details .list {
+    line-height: 1.71;
+    list-style: none;
+}
+
+.details .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Чем мы занимаемся */
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.todo-list {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 969px;
+}
+.list .item {
+    list-style: none;
+}
+
+/* наша команда  */
+.team {
+    background-color: var(--team-section-color);
+
+    font-size: 16px;
+    text-align: center;
+}
+.team .title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    line-height: 1.19;
+}
+
+/* Футер */
+.footer{
+    background-color: var(--second-background-color);
+}
+
+.address .link {
+    color: var(--contact-color);
+
+    line-height: 1.71;
+}
+
+.address .link-adress {
+    color: var(--background-color); 
+}
+/* РЕЗЮМЕ */
 .page-content {
     color: var(--title-text-color);
 
