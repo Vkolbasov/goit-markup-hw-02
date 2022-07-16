@@ -226,6 +226,7 @@ line-height: 1.14;
     font-size: 16px;
     line-height: 26px;
     list-style: none;
+    cursor: pointer;
 }
 .buttons:hover {
     background-color: var(--accent-color);
