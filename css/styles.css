@@ -26,6 +26,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
+    
 
     color: var(--primary-text-color);
     background-color: var(--background-team-section);
@@ -36,6 +37,7 @@ body {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
+
 
 }
 .page-header .item :hover {
@@ -71,6 +73,8 @@ line-height: 1.14;
 .menu .link{
     color: var(--title-text-color);
 
+    text-decoration: none;
+
 }
 
 
@@ -84,6 +88,8 @@ line-height: 1.14;
 .contacts .link {
     color: var(--primary-text-color);
 
+    text-decoration: none;
+    
 }
 
 
@@ -186,25 +192,27 @@ line-height: 1.14;
 /* Футер */
 .footer{
     background-color: var(--second-background-color);
+
 }
 
 .address .link {
     color: var(--contact-color);
 
     line-height: 1.71;
+    text-decoration: none;
 }
 
 .address .link-adress {
     color: var(--background-color); 
 }
-/* РЕЗЮМЕ */
-.page-content {
-    color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
+
+/* РЕЗЮМЕ */
+.resume-title{
+    color: var(--second-background-color);
+    font-size: 1px;
 }
+
 .text {
     color: var(--primary-text-color);
     font-weight: 400;
@@ -217,9 +225,29 @@ line-height: 1.14;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    list-style: none;
 }
 .buttons:hover {
     background-color: var(--accent-color);
-    color: var(--background-team-section);
+    color: var(--background-color)
 
-} */
+} 
+.buttons:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color)
+
+}
+/* список картинок */
+
+.item .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.item .text {
+    font-size: 16px;
+    line-height: 1.88;
+}
