@@ -14,9 +14,10 @@
     --contact-color: rgba(255, 255, 255, 0.6);
     --background-color: rgba(255, 255, 255, 1);
     --second-background-color: #2F303A;
-    --background-team-section: #F5F4FA;
+    
 }
 
+/* основной цвет и текст */
 body {
     font-family: 'Raleway',
     sans-serif;
@@ -30,27 +31,22 @@ body {
     background-color: var(--background-team-section);
 }
 
-/* основной цвет и текст */
-body {
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
-    font-family: roboto;
-    list-style: none;
-}
-.list {
-    list-style: none;
-}
-
-.link { 
-    text-decoration: none;
-    
-}
-
-/* шапка  */
+/* Хедер */
 .page-header {
-    font-weight: 500;
-    font-size: 14px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+
 }
+.page-header .item :hover {
+    color: var(--accent-color);
+}
+
+.page-header .item :focus {
+    color: var(--accent-color);
+}
+
+
 /* логотип */
 .logo {
     color: var(--accent-color);
@@ -58,6 +54,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 .head-logo {
     color: var(--title-text-color)
@@ -67,29 +64,29 @@ body {
 }
 /* ссылки навигации */
 
-.link { 
-color: var(--accent-color)
+.menu {
+    letter-spacing: 0.02em;
+    list-style: none;
 }
-
-.menu-item .link {
+.menu .link{
     color: var(--title-text-color);
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.14;
+
 }
 
+
+    
 /* контакты навигации */
+.list .contacts {
+letter-spacing: 0.02em;
+list-style: none;
+}
 
-.contact-list :hover {
-    color: var(--accent-color)
-}
-.contact-list :focus
-               {
-    color: var(--accent-color)
-}.contact-link {
+.contacts .link {
     color: var(--primary-text-color);
-    letter-spacing: 0.02em;
+    
 }
+
+
 /* Герой */
 .hero {
     background-color: var(--second-background-color);
@@ -112,7 +109,7 @@ color: var(--accent-color)
     background-color: var(--background-color)
 }
 
-.detail-list > .title {
+.detail-list .title {
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -187,4 +184,4 @@ color: var(--accent-color)
     background-color: var(--accent-color);
     color: var(--background-team-section);
 
-}
+} */
